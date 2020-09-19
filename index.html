@@ -21,28 +21,35 @@
 					<div class="form-group">
 						<div class="form-wrapper">
 							<label for="">First Name</label>
-							<input type="text" class="form-control">
+							<input type="text"  class="form-control" required>
+							<span style="color: red;" ng-show="obj.Mandatory">*</span>
 						</div>
 						<div class="form-wrapper">
-							<label for="">Last Name</label>
-							<input type="text" class="form-control">
+							<label for="" >Last Name</label>
+							<input type="text" class="form-control" required>
+							<span style="color: red;" ng-show="obj.Mandatory">*</span>
 						</div>
 					</div>
 					<div class="form-wrapper">
 						<label for="">Email</label>
-						<input type="text" class="form-control">
+						<input type="Email" class="form-control" required>
+						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 					</div>
 					<div class="form-wrapper">
 						<label for="">Password</label>
-						<input type="password" class="form-control">
+						<input type="password" class="form-control" required>
+						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 					</div>
 					<div class="form-wrapper">
 						<label for="">Confirm Password</label>
-						<input type="password" class="form-control">
+						<input type="password" class="form-control" required>
+                         <span style="color: red;" ng-show="obj.Mandatory">*</span>
+
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+							<input type="checkbox" required> 
+							<a href="https://policies.google.com/terms?hl=en-US">I accept the Terms of Use & Privacy Policy</a>
 							<span class="checkmark"></span>
 						</label>
 					</div>
@@ -51,5 +58,5 @@
 			</div>
 		</div>
 		
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	</body>
 </html>
