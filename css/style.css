@@ -14,7 +14,7 @@
 
 body {
   font-family: "Muli-Regular";
-  color: #000000;
+  color: #7fffd4;
   font-size: 13px;
   margin: 0; }
 
@@ -86,7 +86,7 @@ form {
   padding: 0 20px;
   border-radius: 20px;
   font-family: "Muli-Bold";
-  background: #7fffd4; }
+  background: none; }
   .form-control:focus {
     border: 1px solid #ae3c33; }
 
