@@ -21,6 +21,8 @@
 					<div class="form-group">
 						<div class="form-wrapper">
 							<label for="">First Name</label>
+							<span style="color: red;" ng-show="obj.Mandatory">*</span>
+
 							<input type="text"  class="form-control" required>
 							
 						</div>
@@ -33,18 +35,23 @@
 					</div>
 					<div class="form-wrapper">
 						<label for="">Email</label>
-						<input type="Email" class="form-control" required>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
+
+						<input type="Email" class="form-control" required>
+						
 					</div>
 					<div class="form-wrapper">
 						<label for="">Password</label>
-						<input type="password" class="form-control" required>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
+
+						<input type="password" class="form-control" required>
+
 					</div>
 					<div class="form-wrapper">
 						<label for="">Confirm Password</label>
+						<span style="color: red;" ng-show="obj.Mandatory">*</span>
+
 						<input type="password" class="form-control" required>
-                         <span style="color: red;" ng-show="obj.Mandatory">*</span>
 
 					</div>
 					<div class="checkbox">
