@@ -14,7 +14,7 @@
 
 body {
   font-family: "Muli-Regular";
-  color: rgb(106,90,205);
+  color: rgb(255,165,0);
   font-size: 13px;
   margin: 0; }
 
@@ -58,7 +58,7 @@ a:hover {
     font-family: "Muli-Bold";
     text-align: center;
     margin-bottom: 32px;
-    color: rgb(106,90,205);
+    color: rgb(255,0,0);
     letter-spacing: 2px; }
 
 form {
