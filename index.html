@@ -12,17 +12,17 @@
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
 		<script type="text/javascript">
-		id= "compare";
+	
                function pass()
                {
                     var pwd1=document.getElementById('pass1');
                     var pwd2=document.getElementById('pass2');
                     if (pwd1.value!=pwd2.value)
                      {
-                          document.getElementById("compare").innerHTML="Not matched";
+                          document.getElementById('compare').innerHTML="Not matched";
                      }
                    else{
-	                 document.getElementById("compare").innerHTML="";
+	                 document.getElementById('compare').innerHTML="";
 
                     }
 
@@ -74,7 +74,7 @@
 						<label for="">Confirm Password</label>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 
-						<input type="text" name="password" id="pass2" class="form-control" required>
+						<input type="text" name="password" id="pass2" class="form-control" oninput='pass()'><label id='compare'></label> required>
 						      
 					    </div>
 					</div>
