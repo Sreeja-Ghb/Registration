@@ -81,14 +81,14 @@
 						<label for="">Password</label>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 
-						<input type="text"  name= "password" id="pass1" class="form-control" required>
+						<input type="text"  name= "password" id="pass1"  minlength="4" maxlength="8"  class="form-control" required>
 					     </div>
 					    
                                             <div class="form-wrapper">
 						<label for="">Confirm Password</label>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 
-						<input type="text" name="password" id="pass2" class="form-control" oninput='pass()'><label id='compare'></label> 
+						<input type="text" name="password" id="pass2"  minlength="4" maxlength="8" class="form-control" oninput='pass()'><label id='compare'></label> 
 						      
 					    </div>
 					</div>
