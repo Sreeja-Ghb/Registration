@@ -80,6 +80,7 @@
 						      
 					    </div>
 					</div>
+					
 					<div class="form-group" required>
 					        <div class="form-wrapper">
 					         <label for="">Gender</label>
@@ -89,12 +90,20 @@
 				                  <option Value= "male">
 						   <option Value= "female">	  
 						</div>
+							
+					        <div class="form-wrapper">
+                                                <label for="">DOB</label>
+						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
+                                                 <input type="date"  class="form-control"  required>
+					        </div>
+							
 					       <div class="form-wrapper">
                                                 <label for="">mobile</label>
 						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
                                                  <input type="number" maxlength="10" class="form-control"  required>
 					        </div>
 					</div>
+						
 					<div class="checkbox">
 						<label>
 							<input type="checkbox" required> 
