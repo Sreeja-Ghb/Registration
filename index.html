@@ -65,8 +65,10 @@
 					        <div class="form-wrapper">
 					         <label for="">Gender</label>
 						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
-                                                 <input type="radio" name="gender" value="male" class="form-control" required>
-						 <input type="radio" name="gender" value="female" class="form-control" required>	
+                                                 <input list="Gender" name="gender" placeholder="select" class="form-control" required>
+						  <datalist id="gender">
+				                  <option Value= "male">
+						   <option Value= "female">	  
 						</div>
 					</div>
 					<div class="checkbox">
