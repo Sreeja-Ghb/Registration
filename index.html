@@ -124,8 +124,9 @@
 							<span class="checkmark"></span>
 						</label>
 					</div>
-						 
+						 <div>
                                                 <input type="submit" name="submit" value="Submit" id="Submit" class="jfk-button jfk-button-action "> 
+						 </div>
                                       </form>
 						<script>
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwTGqZqLTAsOpSweMn0xgHP0sOJPsFg5ZShC1HqzVoDoNi5h5Y/exec'
@@ -133,7 +134,7 @@ const form = document.forms['submit-to-google-sheet']
 form.addEventListener('submit', e => {
 e.preventDefault()
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => console.log('Success!', response))
+  .then(response => console.log('Registration Successful!', response))
   .catch(error => console.error('Error!', error.message))
  })
 </script>
