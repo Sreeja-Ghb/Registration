@@ -43,9 +43,23 @@
 
               }
 						     function success(){
-			    
+			     var FN= document.getElementById('FIN');
+			     var LN= document.getElementById('LIN');
+			     var GN= document.getElementById('GIN');
+			     var EM= document.getElementById('EML');
+			     var pwd1= document.getElementById('pass1');
+			     var pwd2= document.getElementById('pass2');
+			     var DB= document.getElementById('doh');
+			     var ph= document.getElementById('phn');
+			     var cb= document.getElementById('chb');
+			     if((FN.value)&&(LN.value)&&(GN.value)&&(EM.value)&&(pwd1.value)&&(pwd2.value)&&(DB.value)&&(ph.value)&&(cb.value))!=null)
+			     {
 				      alert( 'Registration Successful') ;
-				
+				}			
+	                      else
+			      {
+				document.write('abc');      
+			      }      
 			  }
 					</script>
 					
