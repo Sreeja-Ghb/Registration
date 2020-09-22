@@ -42,7 +42,7 @@
 		   }
 
               }
-						     function success(){
+		function success(){
 			     var FN= document.getElementById('FIN');
 			     var LN= document.getElementById('LIN');
 			     var GN= document.getElementById('GIN');
@@ -52,14 +52,15 @@
 			     var DB= document.getElementById('doh');
 			     var ph= document.getElementById('phn');
 			     var cb= document.getElementById('chb');
-			     if((FN.value)&&(LN.value)&&(GN.value)&&(EM.value)&&(pwd1.value)&&(pwd2.value)&&(DB.value)&&(ph.value)&&(cb.value))!=null)
+			     if(FN == null || FN == '' || LN == null || LN == ''|| GN == null || GN == '' || EM == null || EM == '' || pwd1 == null || pwd1 == '' || pwd2 == null || pwd2 == '' || DB == null || DB == '' || ph == null || ph == '' || cb == null || cb == '')
 			     {
-				      alert( 'Registration Successful') ;
-				}			
-	                      else
-			      {
-				document.write('abc');      
-			      }      
+				     alert('Please enter all the mandatory fields') ; 
+				     document.write('abc');
+			     }else
+			     { 
+				     alert( 'Registration Successfull') ;
+			     }      
+			      
 			  }
 					</script>
 					
