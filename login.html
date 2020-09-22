@@ -20,11 +20,13 @@
 	<table cellspacing="2" align="center" cellpadding="8" border="0">
 	<tr>
 	<td>Enter User Name :</td>
-	<td><input type="text" placeholder="Enter user name " id="email" class="tb" /></td>
+	<td><input type="text" placeholder="Enter user name " id="email" class="tb" required /></td>
+		<span style="color: red;" ng-show="obj.Mandatory">*</span>
 	</tr>
 	<tr>
 	<td>Enter Password :</td>
-	<td><input type="password" placeholder="Enter Password " id="pwd1" class="tb" /></td>
+	<td><input type="password" placeholder="Enter Password " id="pwd1" class="tb"  required/></td>
+		<span style="color: red;" ng-show="obj.Mandatory">*</span>
 	</tr>
   <tr>
 	<td></td>
