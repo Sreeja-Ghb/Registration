@@ -43,10 +43,24 @@
 
               }
 					
-                    function submit(){
-			   alert( 'Registration Successful') 
+                    function success(){
+			     var FN= document.getElementById('FIN');
+			     var LN= document.getElementById('LIN');
+			     var GN= document.getElementById('GIN');
+			     var EM= document.getElementById('EML');
+			     var pwd1= document.getElementById('pass1');
+			     var pwd2= document.getElementById('pass2');
+			     var DB= document.getElementById('doh');
+			     var ph= document.getElementById('phn');
+			     var cb= document.getElementById('chb');
+			     if((FN.value)&(LN.value)&(GN.value)&(EM.value)&(pwd1.value)&(pwd2.value)&(DB.value)&(ph.value)&(cb.value))!= NULL)
+			     {
+				      alert( 'Registration Successful') ;
 				}			
-	                              
+	                      else
+			      {
+				      
+			      }      
 						
 			</script>			
                                   
@@ -59,13 +73,13 @@
 							<label for="">First Name</label>
 							<span style="color: red;" ng-show="obj.Mandatory">*</span>
 
-							<input type="text"  class="form-control" required>
+							<input type="text" id="FIN" class="form-control" required>
 							
 						</div>
 						<div class="form-wrapper">
 							<label for="" >Last Name</label>
 							<span style="color: red;" ng-show="obj.Mandatory">*</span>
-							<input type="text" class="form-control" required>
+							<input type="text" id="LIN"  class="form-control" required>
 							
 						</div>
 					 </div>
@@ -74,7 +88,7 @@
 					     <div class="form-wrapper">
 					         <label for="">Gender</label>
 						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
-                                                 <input list="gender" name="gender" placeholder="select" class="form-control" required>
+                                                 <input list="gender" name="gender" placeholder="select" id="GIN" class="form-control" required>
 						  <datalist id="gender">
 				                  <option Value= "male">
 						   <option Value= "female">	  
@@ -84,7 +98,7 @@
 						<label for="">Email</label>
 						<span style="color: red;" ng-show="obj.Mandatory">*</span>
 
-						<input type="Email" class="form-control" required>
+						<input type="Email"  id="EML" class="form-control" required>
 					       </div>
 					 </div>
 					
@@ -109,25 +123,25 @@
 						<div class="form-wrapper">
                                                 <label for="">DOB</label>
 						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
-                                                 <input type="date"  class="form-control"  required>
+                                                 <input type="date"  id="doh"  class="form-control"  required>
 					        </div>
 					        
 					       <div class="form-wrapper">
                                                 <label for="">mobile</label>
 						 <span style="color: red;" ng-show="obj.Mandatory">*</span>
-                                                 <input type="number" maxlength="10" class="form-control"  required>
+                                                 <input type="number" maxlength="10"  id="phn" class="form-control"  required>
 					        </div>
 					</div>
 						
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" required> 
+							<input type="checkbox" id="chb" required> 
 							<a href="https://policies.google.com/terms?hl=en-US">I accept the Terms of Use & Privacy Policy</a>
 							<span class="checkmark"></span>
 						</label>
 					</div>
 						 
-						 <button onclick= 'submit()'> Register </button>
+						 <button onclick='success()'> Register </button>
 					
 				</form>
 					 
