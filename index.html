@@ -87,66 +87,66 @@
 						<div class="form-wrapper">
 							
 							<td align='center'> Last name</td>
-							<input type="text" id="LIN"   required>
+							<input type="text" name="Last Name" id="LIN"   required>
 							
 						</div>
 					 </div>
 					
 					 <div class="form-group">
 					     <div class="form-wrapper">
-					         <label for="">Gender</label>
-						 
-                                                 <input list="gender" name="gender" placeholder="select" id="GIN" class="form-control" required>
+					         
+						 <td align='center'> Gender</td>
+                                                 <input list="gender" name="gender" placeholder="select" id="GIN"  required>
 						  <datalist id="gender">
 				                  <option Value= "male">
 						   <option Value= "female">	  
 						</div>
 					
 					      <div class="form-wrapper">
-						<label for="">Email</label>
+						<td align='center'> Email</td>
 						
-						<input type="Email"  id="EML" class="form-control" required>
+						<input type="Email"  id="EML"  required>
 					       </div>
 					 </div>
 					
 					      <div class="form-group" >
 					        <div class="form-wrapper">
-						<label for="">Password</label>
+						<td align='center'>Password</td>
 						
 
 						<input type="text"  name= "password" id="pass1"  minlength="6" maxlength="10"  class="form-control" required>
 					     </div>
 					    
                                             <div class="form-wrapper">
-						<label for="">Confirm Password</label>
+						<td align='center'> ConfirmPassword</td>
 						
 
-						<input type="text" name="password" id="pass2"   class="form-control" oninput='pass()'><label id='compare'></label> 
+						<input type="text" name="password" id="pass2"   oninput='pass()'><label id='compare'></label> 
 						      
 					    </div>
 					</div>
 					
 					<div class="form-group" required>
 						<div class="form-wrapper">
-                                                <label for="">DOB</label>
+                                                <td align='center'> DOB</td>
 						 
-                                                 <input type="date"  id="doh"  class="form-control"  required>
+                                                 <input type="date"  id="doh"   required>
 					        </div>
 					        
 					       <div class="form-wrapper">
-                                                <label for="">mobile</label>
+                                               <td align='center'> Mobile Number</td>
 						
-                                                 <input type="number" maxlength="10"  id="phn" class="form-control"  required>
+                                                 <input type="number" maxlength="10"  id="phn"   required>
 					        </div>
 					</div>
 						
 					<div class="checkbox">
-						<label>
+						<td>
 							<input type="checkbox" id="chb" required> 
 							
 							<a href="https://policies.google.com/terms?hl=en-US">I accept the Terms of Use & Privacy Policy</a>
 							<span class="checkmark"></span>
-						</label>
+						</td>
 					</div>
 						 
 						 <button onclick='success()'> Register </button>
