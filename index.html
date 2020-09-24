@@ -57,11 +57,11 @@
 			     var DB = document.getElementById('doh').value;
 			     var ph = document.getElementById('phn').value;
 			     var cb = document.getElementById('chb').checked;
-			     if(FN == null || FN == '' || LN == null || LN == ''|| GN == null || GN == '' || EM == null || EM == '' || pwd1 == null || pwd1 == '' || pwd2 == null || pwd2 == '' || DB == null || DB == '' || ph == null || ph == '' || cb == false)
+			     if(FN == null || FN == '' || LN == null || LN == ''|| GN == null || GN == '' || EM == null || EM == '' || pwd1 == null || pwd1 == '' || pwd2 == null || pwd2 == '' || DB == null || DB == '' || ph == null || ph == '' )
 			     {
 				     alert('Please enter all the mandatory fields') 
 				     //document.write('abc');
-			     }elseif(cb==checked){
+			     }elseif(cb==false){
 				     alert('click the checkbox')
 				     
 			     else{ 
@@ -143,13 +143,7 @@
 					        </div>
 					</div>
 						
-					<div class="checkbox">
-						<td>
-							<input type="checkbox" id="chb" required> 
-							<a href="https://policies.google.com/terms?hl=en-US"> I accept the Terms  & Privacy Policy</a>
-							<span class="checkmark"></span>
-						</td>
-					</div>
+					        <input type="checkbox"   id="Chb" >
 						 
 						 <button onclick='success()'> Register </button>
 						 <a href="login.html">Login Page</a>
